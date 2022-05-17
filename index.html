@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+<body>
+
+    <!--Elabore um algoritmo que permita a entrada de dois números diferentes e verifique qual deles é o maior.-->
+
+<form action="">
+
+    <fieldset>
+        <legend>Comparador</legend>
+        <label for="idNum01">Numero 01</label><br>
+        <input type="number" name="nmNumero01" id="idNum01" >
+        <br><br>
+        <label for="idNum02">Número 02</label><br>
+        <input type="number" name="nmNumero02" id="idNum02" >
+        <br><br>
+
+        <output id="idOut">Resultado: </output>
+        <br><br>
+
+        <input type="button" value="Comparar" onclick="comparar()">
+        <input type="reset" value="Limpar">
+       
+
+    </fieldset>
+   
+
+</form>
+
+    <script>
+
+        function comparar()
+        {
+
+        var num01 = Number(document.getElementById("idNum01").value)
+        var num02 = Number(document.getElementById("idNum02").value)
+    
+
+            if (num01 == num02) {
+                document.getElementById("idOut").value = "Resultado: Os números são iguais"
+            }   else {
+                    if (num01 > num02) {
+                        document.getElementById("idOut").value = "Resultado: Numero do campo 01 é maior que do campo 02"
+                    } else {
+                        document.getElementById("idOut").value = "Resultado: Numero do campo 01 é menor que do campo 02"
+                    }
+                
+                        
+                        }
+           
+        }
+
+
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+    
+</body>
+</html>
